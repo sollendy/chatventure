@@ -7,9 +7,47 @@
     <link href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>pronto per l'avventura?</h1>
-    <h2>io no ci vediamo dopo pranzo</h2>
+<body class="avvio-gioco">
+    <!-- <h1>pronto per l'avventura?</h1>
+    <h2>io no ci vediamo dopo pranzo</h2> -->
+    <header>
+        <h1>ChatVenture</h1>
+        <p>Ciao GIOCATORE, benvenuto nel gioco d'avventura testuale in cui la storia è inventata da ChatGPT :) </p>
+    </header>
+
+    <main class="container">
+        <div class="generi">
+            <div class="genere" data-genere="horror">👻</div>
+            <div class="genere" data-genere="film di spionaggio">🕵️‍♀️</div>
+            <div class="genere" data-genere="supereroi marvel">🦸‍♀️</div>
+        </div>
+
+        <div class="carico invisibile">
+            <img src="images/loader.gif" alt="carico">
+        </div>
+
+        <div id="segnaparte"></div>
+
+        <template id="segna-fine">
+            <div class="fine-gioco">
+                <div class="fine-icona">☠</div>
+                <h2>Sei Morto</h2>
+                <p class="fine-messaggio">Lorem ipsum dolor, est ullam corporis modi, cumque sequi iusto delectus magni molestiae doloremque enim? Suscipit, esse.</p>
+                <button>Rigioca</button>
+            </div>
+        </template>
+
+        <template id="segna-quadro">
+            <div class="quadro">
+                <div class="quadro-img"></div>
+                <div class="quadro-cont">
+                    <p class="quadro-desc"></p>
+                    <div class="quadro-vie"></div>
+                </div>
+            </div>
+        </template>
+    </main>
+
     <script src="js/script.js"></script>
 </body>
 </html>
