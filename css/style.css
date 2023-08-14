@@ -64,7 +64,7 @@ p {
 
 .avvio-gioco header p,
 .avvio-gioco .generi {
-    /* display: none; */
+    display: none;
 }
 
 .carico {
